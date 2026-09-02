@@ -59,7 +59,7 @@
                     <div>Documento en Contingencia</div>
                     <div>Número de Acceso: <span t-esc="order.numero_acceso_fel"/></div>
                 </div>
-                <t t-if='!order.footer'>
+                <t t-if='!order.config.receipt_footer'>
                     <div>Sujeto a pagos trimestrales ISR</div>
                 </t>
             </div>
